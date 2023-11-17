@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de docentes</h1>
+        <a href="./view/formularioDocente.html" id="registrarLinkDocentes" class="button">Registrar Docente</a>
+        <table id="docentesTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Ocupación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="docentesBody">
+            </tbody>
+        </table>
+
+        <h1>Lista de cursos</h1>
+        <a href="./view/formularioCurso.html" id="registrarLinkCursos" class="button">Registrar Curso</a>
+        <table id="cursosTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Docente</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cursosBody">
+            </tbody>
+        </table>
+        <table id="cursosAsociadosTable" >
+            <h1>Cursos Asociados al Docente</h1>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>CodDocente</th>
+                </tr>
+            </thead>
+            <tbody id="cursosAsociadosBody">
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
